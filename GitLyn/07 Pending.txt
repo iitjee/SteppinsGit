@@ -2,3 +2,10 @@ Not really pending, but just revise this "theory" part of Git
 Section 4 - all 4 videos
 
 4th video - https://www.lynda.com/Git-tutorials/Working-HEAD-pointer/100222/111269-4.html
+
+
+Just remember, HEAD is a pointer pointing to the latest checked-out BRANCH
+(and not the commit itself)
+
+@theendOfVide(4th) he also shows where to look at to see what's stored in HEAD (>.git>HEAD and that gives a result(branch)- in which we've 
+to see for the latest commit (in refs something)
