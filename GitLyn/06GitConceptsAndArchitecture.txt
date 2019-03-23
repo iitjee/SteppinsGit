@@ -1,4 +1,5 @@
 ( jus go through the video once again... will get your concepts clear :) )
+https://www.lynda.com/Git-tutorials/Exploring-three-trees-architecture/100222/111266-4.html?
 
 2 - tree architecture vs 3-tree architecure (see the two images below )
 (the main difference is teh staging area => we don't need to commit all the changed files at one time)
