@@ -1,0 +1,12 @@
+git diff
+//changes b/w repository level and working directory level
+(=> if you stage any file, those changes won't appear! to see them see below)
+
+
+
+
+git diff --staged
+(same as git status --cached       old name)
+give chanages b/w repository level and working directory level
+
+
