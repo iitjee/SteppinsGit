@@ -1,0 +1,28 @@
+two ways:
+1. change in fs and then git it
+2. use git to both change and add it to staging area
+
+
+method 1: 
+if you rename a file say "aaa.txt" to "bbb.txt"
+then git sees it as a deletion first and then creation of a new file
+so you'll have to two gits
+i.e         $ git add "bbb.txt"
+            $ git rm "aaa.txt"  //will add to staging area, remember
+            
+but if you do $git status
+NOW git realizes both are actually same files adn says "renamed" (but just after you modified using fs, you did "git status" it says not 
+same)So, once it gets to the staging index, it actually compares the data between the two and says oh, these are pretty close. It doesn't 
+have to be exactly the same, some changes could have taken place at the same time.I think the threshold is about 50%. As long as the data 
+is about 50% the same between the two of them, it says oh, okay, this is the same file. 
+
+
+
+method 2:
+git mv aaa.txt bbb.txt
+this renames as well as adds to the staging area
+(feeling bad about why it has to do both? well, if you just want to rename, why not use only unix command "rm")
+
+even if you want to move a file to antoher folder, it's teh same
+in git; ----- moving ==== renaming
+git mv aaa.txt anotherFolder/bbb.txt
