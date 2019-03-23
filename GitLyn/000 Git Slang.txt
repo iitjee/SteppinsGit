@@ -4,3 +4,14 @@ working directory is clean => nothing to commit
  
  
  staging area = staging index = staging directory
+
+
+
+if you "git log" fro the first time (even before any commmit)
+you get "fatal: your current branch 'master' does not have any commits yet"
+nothing to worry
+(previ. it used to say, "fatal : bad default revision 'HEAD')
+Git log comes up and says oops, the HEAD doesn't point to anywhere useful yet, that's basically what it's telling us that HEAD isn't 
+pointing anywhere useful, and it's trying to find the HEAD because remember the HEAD points to the last commit. Well, there hasn't been a 
+commit yet, so HEAD hasn't been established, and that really just happens right when you first initialize your project. Once we make our 
+first commit, then it will all be there.
