@@ -1,0 +1,6 @@
+"git status shows us that our working directory is clean, and our working directory is now the same state as our repository."
+working directory is clean => nothing to commit
+ working directory is now the same state as our repository => same as above... ntn to commit
+ 
+ 
+ staging area = staging index = staging directory
