@@ -1,0 +1,19 @@
+git init
+ls //no files are seen
+ls -la //.git FOLDER is seen (hidden)
+ls -la .git //inside .git Folder
+
+
+all the tracking related stuff is stored in .git folder
+if you ever watn to remove git tracking, u just delete .git folder
+
+.git
+this is Git's workspace, you don't want to come in here and start messing around and changing things, leave it alone, let Git manage these 
+files and let it put things where they need to be. The only exception to that would be the config file, that's the only thing that you 
+would really ever come in here and either take a look at or even possibly edit.
+
+git vs svn
+Now again, I want to just emphasize the point that everything that Git does is going to be stored in this single top-level directory, 
+ that's very different from svn. If you've worked with svn before, svn puts little tracking files in every single directory down the line.
+So if you wanted to remove svn, you have to go through and actually pull out those .svn files from every single directory so that it will 
+stop tracking those. Git doesn't do that, Git puts them all right here in one place at the top level. 
