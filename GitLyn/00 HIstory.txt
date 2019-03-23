@@ -1,0 +1,90 @@
+There are five important version control systems that predate Git that I want us to look at. There have been many others over the years, 
+but these are some of the most popular and the most influential. The first of these is SCCS, it wasn't the first, but it was the first 
+to become popular. It was released in 1972 and was developed by AT&T and bundled free with Unix. Now Unix was also free, and as a 
+consequence it spread quickly to places like universities, so therefore universities also taught their students how to do version 
+control using SCCS. So if you were writing Unix programs that's what you learned to use.
+
+
+
+And then when these students left the universities to go work in jobs, the Version Control System that they were familiar with, and they 
+took with them, was SCCS, so you can see why it became very popular. We talked about very primitive version control earlier, that you 
+might have something like a budget, and you might save version 1 of the budget and version 2 and version 3 just giving a different file 
+name each time. When you do that you are actually saving the full document three different times. That's not the most efficient way to 
+do it. What SCCS does is it keeps the original document, but then instead of saving the whole document a second time, it just saves a 
+snapshot of what the changes were.
+
+
+So if you want version 5 of the document, you just take version 1 and apply four sets of changes to it, to get to version 5, that's a 
+much more efficient way to store the changes over time. So SCCS stayed dominant until the early '80s when RCS was developed, Revision 
+Control System, and it just made lots of improvements over SCCS. For one thing it was cross-platform, whereas SCCS was Unix only. With 
+the rise of the Personal Computer it was important to have a Version Control System that could work on PCs. It was also more intuitive, 
+had a cleaner syntax with fewer commands, but more features.
+
+
+
+And most importantly it was faster and a lot of its speed increase came from the fact that it used a smarter storage format whereas SCCS 
+stored the original file and then kept track of all the changes that went after it, RCS flipped that around so that it kept the most 
+recent file in its whole form, and if you wanted previous versions, then you applied the change snapshots to go backwards in time. If 
+you think about it, that's a lot faster because most of the time what we want to work with is the current document. With SCCS if we 
+wanted the current document, and there were 20 sets of changes, we had to pull up the original and then apply 20 sets of changes to get 
+there, with RCS we can just bring up the original file, and it is already stored in its full state.
+
+
+
+Now one of the problems with both SCCS and RCS was they only allowed you to work with an individual file one at a time. So you could 
+track changes in a single file, but not in sets of files, or in a whole project. CVS allowed you to do that, that's for Concurrent 
+Versions System. Now the real innovation now to CVS is not just the fact that you can work with multiple files, it's the concurrent 
+part, the fact that we can have a place where we store our code, called a Code Repository, you can put that on a remote server, and more 
+than one user can work on the same file at the same time, they can work concurrently.
+
+
+
+With previous versions only one person could work with a file at a single time. So CVS adds a lot of features for users to be able to 
+share their work and be able to update their file with changes that other people have made and placed in the remote repository. This 
+idea of working with remote repositories was further improved upon with Apache Subversion or SVN for short. SVN was faster than CVS, and 
+it allowed saving of non-text files, like images, whereas CVS couldn't do that. Most importantly, the big innovation for SVN was that it 
+was tracking not just changes to files, or to groups of files, but actually watching what happened in a directory as a whole, watching 
+the files in the directory and actually taking a snapshot of the directory not just the files.
+
+
+
+Now it may seem like a small difference, but it's important. In CVS you would talk about having revision 7 of some file. In SVN, you 
+talk about some file as it appears in revision 7. SVN could track the history of directories. For examples, CVS had a hard time if you 
+renamed a file. SVN though would track that change with no problem. If you add a file directory, remove a file, rename it, it's watching 
+the directory as a whole to see what happens and taking a snapshot of that, whereas CVS was just looking at a collection of individually 
+named files.
+
+
+CVS would also update files one at a time as it went to either apply or read back changes. SVN would instead do a transactional commit 
+and apply all of the changes that happen to the directory or none of them at all. The snapshot was bigger than just the individual 
+files, it was the entire directory, the entire set of changes that were happening to that directory at one time. It's a subtle but 
+important difference. Now SVN stayed the most popular Version Control System for a very long time until Git came out, but there is one 
+other Version Control System that I want us to look at before that, and that is BitKeeper SCM.
+
+
+
+It was a closed source proprietary source code management tool. That means that a company owned it and sold it, the same way that Adobe 
+sells Photoshop or Microsoft sells Word. One of the important features the BitKeeper had, and it wasn't the first to have it, but is 
+Distributed Version Control. But before we get to that, let's talk a little bit more about this idea of being closed source, whereas all 
+the other ones that we have been looking at for a while had been open source. The community version of BitKeeper was free, it had a few less features and some usage restrictions, but there was a version that they gave away for free, and that version was used for source 
+code management of the Linux kernel from 2002 to 2005.
+
+
+
+Now it was controversial to use a proprietary SCM for the Linux kernel because the Linux kernel is an open source project, no one owns 
+it, whereas the SCM is owned and controlled by a company. So a lot of people objected saying, well what if they change the rules in the 
+future, suddenly we're going to be screwed because we are stuck using this company's software? Well, guess what, in April 2005, the 
+community version stopped being free and all those predictions came true. Now BitKeeper was never as popular CVS or SVN, but it is super 
+important with the creation of Git because of its connection to Linux, because in April 2005, when the community version stopped being 
+free, that's the same point at which Git was born, Git was created by Linus Torvalds, and you may recognize that name as the person who 
+created Linux and still drives the development of the Linux kernel.
+
+
+
+When BitKeeper stop being free they needed an alternative for managing their source code. Linus looked around, and it didn't like the 
+other VCSs that were out there, like CVS and SVM, he did like some of the concepts of BitKeeper, but he thought he could do even better, 
+so he wrote a new VCS from scratch. Now Git is Distributed Version Control, like BitKeeper, and we'll talk more about Distributed 
+Version Control in the next movie. It's also open source and free, which is great for us, because it means that people like you and me 
+can download it for free and use it for free with no license fees or anything like that.
+
+
