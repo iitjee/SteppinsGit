@@ -10,3 +10,31 @@ git diff --staged
 give chanages b/w repository level and working directory level
 
 
+
+git diff myFile.txt
+//to get changes only in one particular file
+
+
+
+// to see looong lines nicely---- press minus key then, shift+s adn click return
+It's showing me pages of results and in fact if I scroll this up like this, you can see that it's now asking me. Here, it's prompting me, 
+waiting for me to hit the spacebar to show me the rest of the results, and I can use F and B to go forwards and backwards through those 
+results. What this is the less pager that's built into UNIX. So I'm using the less pager to see these results.
+
+The less pager has a 
+feature where I can either start it up using the -R command, and you can set that in your global configuration or while I'm inside of it I 
+can press the minus key and then Shift+S and then hit Return, and it will fold those long lines.
+(this'll soft-wrap the lines acc to size of window instead of getting truncated! xD )
+
+ And if I want to switch it back -S and Return chops the long lines instead. Now as I said that is something you can use a configuration 
+ for in your config file if you wanted to always be that way
+ 
+ 
+ 
+ 
+ 
+ //VERY COOL!!
+ git diff --color-words contact.html
+  it gives me that same information, but instead of having two separate lines it gave me a different format, and 
+  it put the change here in the same LINE!!!!!! wow!!!
+  side by side. 
