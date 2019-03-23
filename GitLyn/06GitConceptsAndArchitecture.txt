@@ -1,8 +1,13 @@
 ( jus go through the video once again... will get your concepts clear :) )
-https://www.lynda.com/Git-tutorials/Exploring-three-trees-architecture/100222/111266-4.html?
 
-2 - tree architecture vs 3-tree architecure (see the two images below )
+https://www.lynda.com/Git-tutorials/Exploring-three-trees-architecture/100222/111266-4.html
+https://www.lynda.com/Git-tutorials/Git-workflow/100222/111267-4.html
+
+2-tree architecture vs 3-tree architecure (see the two images below )
 (the main difference is teh staging area => we don't need to commit all the changed files at one time)
+( three trees, we've got our "working directory", the" staging index", and the "repository". )
+
+(importance of staging area - https://stackoverflow.com/questions/49228209/whats-the-use-of-the-staging-area-in-git/49228297#49228297 )
 
 we're going to examine a few key concepts in Git that will help you to better understand how it works, and the first of these is the 
 three tree architecture that it uses.
