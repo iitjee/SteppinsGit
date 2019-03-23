@@ -1,0 +1,4 @@
+Not really pending, but just revise this "theory" part of Git
+Section 4 - all 4 videos
+
+4th video - https://www.lynda.com/Git-tutorials/Working-HEAD-pointer/100222/111269-4.html
