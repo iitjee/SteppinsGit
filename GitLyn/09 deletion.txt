@@ -3,6 +3,11 @@ two ways:
 2. use 'git' to both remove and commit
 
 
+a minor note:
+even if you delete, obviously, you need to remind git of doign that
+git tracks "CHANGES" which includes deletion
+(you can check this by $git status)
+
 method 1:
 when you delete manually, adv is you'll hav eit in trash
 (ofc, since all previous file versions are stored in the repo, it doesn't matter much anyway)
