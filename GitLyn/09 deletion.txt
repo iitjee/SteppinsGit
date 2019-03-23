@@ -1,0 +1,14 @@
+two ways:
+1. remove the file manually and then 'git' it
+2. use 'git' to both remove and commit
+
+
+method 1:
+when you delete manually, adv is you'll hav eit in trash
+(ofc, since all previous file versions are stored in the repo, it doesn't matter much anyway)
+      $git rm MyFileName //stages it (like add)
+      $git commit -m "blabla"
+      
+method 2:
+    $git rm myFileName
+(both removes and adds to the staging area)
