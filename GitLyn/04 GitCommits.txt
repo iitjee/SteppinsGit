@@ -1,6 +1,15 @@
 git add . //add all the files to staging area
 git commit -m "initial commit"   //committing with a message
 
+
+git commit -am "haha commit"
+caveats:
+1.  The first is that, of course, this grabs everything that is in your working directory. So if there were some things that you didn't 
+want to include in the change, they're going to get pushed up there as well. 
+
+2.  files that are not tracked, or files that are being deleted, do not get included in this. So it works well for modifications, but for 
+new files and deleted files it doesn't work well!!!!!!!!!! woah!!!!!!!!!!!!
+
 pending: watch https://www.lynda.com/Git-tutorials/Writing-commit-messages/100222/111263-4.html
 too much drag! ;/
 
