@@ -7,6 +7,9 @@ https://www.lynda.com/Git-tutorials/Git-workflow/100222/111267-4.html
 (the main difference is teh staging area => we don't need to commit all the changed files at one time)
 ( three trees, we've got our "working directory", the" staging index", and the "repository". )
 
+
+"staging index" = "staging area" = staging directory
+
 (importance of staging area - https://stackoverflow.com/questions/49228209/whats-the-use-of-the-staging-area-in-git/49228297#49228297 )
 
 we're going to examine a few key concepts in Git that will help you to better understand how it works, and the first of these is the 
