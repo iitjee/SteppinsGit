@@ -1,0 +1,7 @@
+The first thing we need to know is that there's three places that Git stores configuration information and depends on how widely we want 
+those configurations to apply. The first and largest is System level configuration, that is configurations that ought to apply to every 
+user of this computer. Now each user, of course, can overwrite it with their own, but these are going to be default configurations. Now in 
+truth you won't use this very often. It's much easier and much better to set it up on a per user basis, but I just want you to know that 
+it exists.
+
+..watc hthe course :/
